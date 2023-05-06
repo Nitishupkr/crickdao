@@ -1,0 +1,117 @@
+/* .card {
+    display: flex;
+  margin: 0 auto;
+  padding: 250px 200px;
+  border: 3px solid red;
+} */
+
+.box {
+  /* z-index: 100; */
+  /* content: ""; */
+  position: absolute;
+  /* top: 120%;
+  left: 50%; */
+  transform: translate(-50%, -50%);
+  /* width: 300px;
+  height: 450px; */
+}
+.box .gif {
+  /* position: relative; */
+  width: 100%;
+  height: 100%;
+  transform: perspective(1000px) rotateY(0deg);
+  transition: 0.9s;
+  backface-visibility: hidden;
+}
+.gif {
+  padding: 5px;
+  max-width: 300px;
+  height: auto;
+  border: 3px solid rgb(148, 228, 255);
+  border-radius: 20px;
+}
+
+.box:focus .gif {
+  transform: perspective(1000px) rotateY(-180deg);
+}
+.box .content {
+  border-radius: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(148, 228, 255);
+  /* background: linear-gradient(90deg, #505050 0% 50%, #323232 50% 100%); */
+  color: black;
+  transform: perspective(1000px) rotateY(180deg);
+  transition: 0.9s;
+  backface-visibility: hidden;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box:hover .content {
+  transform: perspective(1000px) rotateY(0deg);
+}
+.box .content .center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+.box .content h1 {
+  font-size: 20px;
+}
+.box .content h1 span {
+  font-size: 16px;
+  color: #c1c1c1;
+}
+.box .content ul {
+  position: relative;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* display: inline-block; */
+}
+.box .content ul li {
+  list-style: decimal;
+}
+
+
+
+.mintBtn{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.mintBtn:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .mintBtn {
+    padding: 0.25em 0.75em;
+  }
+}

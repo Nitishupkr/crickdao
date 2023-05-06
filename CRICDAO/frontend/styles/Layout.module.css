@@ -1,0 +1,234 @@
+.header {
+  /* border-bottom: 1px solid #e2e8f0; */
+  margin-bottom: 50px;
+}
+
+.navbar {
+  z-index: 100;
+  /* -webkit-box-shadow: 0px 8px 11px 3px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 8px 11px 3px rgba(0, 0, 0, 1);
+  box-shadow: 0px 8px 11px 3px rgba(0, 0, 0, 1);
+ */
+  /* background: rgb(18, 18, 18);  */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2.5rem;
+  background-color: white;
+  background-color: #29c6ff;
+  background: linear-gradient(#b3ffeb, #8aecff);
+  background: linear-gradient(#00bbff, #63e5ff);
+
+  /* background-color: #417cd5; */
+  /* color: white; */
+
+  max-height: 8vh;
+  /* border: 2px solid red; */
+}
+
+.logo {
+  font-size: 35px;
+  font-weight: 500;
+  /* font-size: 40px;
+  font-weight: 900;
+  cursor: pointer;
+  background: #00f7ff;
+  background: repeating-linear-gradient(
+    to top left,
+    #00f7ff 0%,
+    #0a92fa 50%,
+    #1fbcff 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.navmenu {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  list-style: none;
+  /* margin-right: auto; */
+  flex-wrap: wrap;
+}
+
+.navitem {
+  margin-left: 25px;
+  transition: transform 0.2s;
+}
+
+.navitem:hover {
+  transform: scale(1.12);
+}
+
+.navlink {
+  font-size: 18px;
+  /* 
+  font-weight: 400;
+  color: #bcb8e1;
+  color: #1fbcff;
+  text-transform: uppercase; */
+}
+
+.navlink:hover {
+  /* color: #a6a0da;
+  color: #0a92fa; */
+}
+
+.connect {
+}
+
+.hamburger {
+  background-color: #000000;
+  display: none;
+  color: #dddbf1;
+  border-radius: 5px;
+  padding: 0.25em 0.5em;
+  /* box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px; */
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.hamburger:active {
+  /* box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px; */
+}
+
+.bar {
+  display: block;
+  width: 32px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+}
+
+.container {
+  /* padding: 0 2rem; */
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  font-size: 20px;
+  padding: 1.5rem 0;
+  border-top: 1px solid #e1e1e1;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#00bbff, #63e5ff);
+  margin: 0;
+  background: #181616;
+  color: white;
+
+}
+
+.footer a {
+  margin: 8px;
+  text-decoration: underline;
+}
+
+.connect {
+  /* appearance: button; */
+  background-color: #29c6ff;
+  /* background-image: none; */
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  
+  margin: 10px auto;
+  /* margin-top: 40px ; */
+  /* width: 100px; */
+  padding: 2px 10px;
+  background: linear-gradient(#00bbff, #63e5ff);
+  background: #68b3f5;
+
+  font-size: 18px;
+}
+
+.connect:focus {
+  text-decoration: none;
+}
+
+.connect:hover {
+  text-decoration: none;
+}
+
+.connect:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.connect:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* .connect {
+    visibility: hidden;
+  } */
+
+  .navmenu {
+    z-index: 100;
+    position: fixed;
+    left: -100%;
+    top: 3rem;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    background: linear-gradient(#63e5ff, #00bbff);
+    justify-content: center;
+    transition: 0.3s;
+  }
+
+  .hamburger {
+    padding: 0.25em 0.75em;
+  }
+
+  .navmenu.active {
+    left: 0;
+  }
+
+  .navitem {
+    margin: 1rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}

@@ -1,0 +1,48 @@
+.container {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  /* min-height: 80vh; */
+  /* justify-content: space-around; */
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  background: rgb(116, 144, 255);
+  background: linear-gradient(
+    329deg,
+    rgba(116, 144, 255, 1) 0%,
+    rgba(55, 186, 210, 1) 35%,
+    rgba(110, 186, 242, 1) 70%,
+    rgba(116, 144, 255, 1) 100%
+  );
+
+  flex-direction: column;
+  background-color: #b3ffeb;
+}
+.container h1{
+  margin: 15px auto;
+}
+.main {
+  min-height: 76vh;
+  margin: 0 auto;
+  padding: 0 2rem;
+  /* margin-top: 120px;
+    margin-bottom: 40px;
+    min-height: 84vh; */
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  /* background-color: #181616;
+    color: white; */
+}
+
+/* .card {
+    margin: 0px;
+} */
+
+/* .container * {
+    border: 1px solid green;
+} */

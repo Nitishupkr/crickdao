@@ -1,0 +1,133 @@
+.container {
+  padding: 5rem 2rem;
+  margin-top: 0px;
+  /* margin-bottom: 40px; */
+  background-color: #b3faff;
+  
+  /* min-height: 84vh; */
+}
+
+.main {
+  /* margin: 0 auto; */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  /* justify-content: space-around; */
+  align-items: center;
+  flex-wrap: wrap;
+  border: 5px solid gray;
+  border-radius: 20px;
+  /* width: max-content; */
+}
+
+
+.content {
+  /* max-width: 1200px; */
+  /* margin: 0 20px; */
+  margin-right: 80px;
+  margin-left: 80px;
+  padding: 20px 10px;
+  max-height: inherit;
+  text-align: center;
+}
+
+.pfp {
+  max-width: 250px;
+}
+
+.main ul {
+    text-align: start;
+    font-size: 18px;
+}
+
+/* stats section */
+
+.stats_section * {
+    /* border: 1px solid red; */
+    /* display: flex; */
+}
+
+.stats_section {
+  border: 5px solid gray;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stats_heading {
+  margin-top: 40px;
+
+    /* border: 1px solid red; */
+   display: flex;
+   justify-content: center;
+    /* width: 200px; */
+  }
+
+.tabs_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs {
+    margin: 0 20px;
+}
+
+.tabs {
+  border-radius: 10px;
+  /* text-align: center; */
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  /* width: 80px; */
+  width: 100%;
+  background: rgba(159, 159, 159, 0.209);
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+}
+.tabs:not(:last-child){
+  border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+
+.active_tab {
+    background: rgb(234, 234, 234);
+    background: rgb(129, 205, 255);
+    color: black;
+    border-bottom: 8px solid wheat;
+}
+
+.active_tab::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -5;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 2px);
+    height: 5px;
+    /* background: rgb(0, 0, 0); */
+}
+
+.content_tabs {
+    display: flex;
+    flex-grow: 1;
+    border: 2px solid gray;
+    /* border-radius: 20px; */
+
+}
+
+.nft_stats, .match_stats {
+  /* background: white; */
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.active_content {
+  display: block;
+}

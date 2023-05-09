@@ -79,7 +79,7 @@ export default function Layout({ children }) {
             href="https://twitter.com/0xdhruva"
             rel="noopener noreferrer"
           >
-            Dhruv
+            Nitish
           </a>
           <span>&</span>
           <a
@@ -87,7 +87,7 @@ export default function Layout({ children }) {
             href="https://twitter.com/kushagrasarathe"
             rel="noopener noreferrer"
           >
-            Kushagra
+            Apurva
           </a>
           &#9749;
         </footer>

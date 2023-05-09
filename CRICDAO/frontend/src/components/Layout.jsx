@@ -89,7 +89,6 @@ export default function Layout({ children }) {
           >
             Apurva
           </a>
-          &#9749;
         </footer>
       </div>
     </>
